@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-# cicd-devlrm: troque cicd-prod pelo seu projeto de producao ($PROD_NS).
+# lucasrmartins-dev: troque cicd-prod pelo seu projeto de producao ($PROD_NS).
 namespace: cicd-prod
 
 resources:
@@ -9,7 +9,7 @@ resources:
 
 # Producao NAO e construida: usa a MESMA imagem de dev, identificada pelo digest.
 # O digest (e APP_VERSION) so mudam por pull request de promocao (config/scripts/promover.sh).
-# cicd-devlrm: em newName, troque cicd-dev pelo seu projeto de DESENVOLVIMENTO ($DEV_NS),
+# lucasrmartins-dev: em newName, troque cicd-dev pelo seu projeto de DESENVOLVIMENTO ($DEV_NS),
 # porque e la que o pipeline publica a imagem.
 images:
   - name: luz-bairro
