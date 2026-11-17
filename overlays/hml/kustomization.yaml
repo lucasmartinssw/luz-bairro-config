@@ -14,7 +14,7 @@ resources:
 images:
   - name: luz-bairro
     newName: image-registry.openshift-image-registry.svc:5000/lucasrmartins-dev/luz-bairro
-    newTag: latest
+    newTag: fbd33286bf5fa8bbe20e774c317c9b5772601075
 
 configMapGenerator:
   - name: luz-bairro-config
